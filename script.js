@@ -28,7 +28,7 @@
 
 window.addEventListener('load', function() {
 
-    fetch("astronauts.json").then(function(response) {
+    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
         return response.json();
     }).then(function(json) {
         console.log(json);
