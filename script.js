@@ -1,3 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('page is fully loaded');
+
+    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
+        console.log(response);
+    });
 });
